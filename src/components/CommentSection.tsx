@@ -122,14 +122,14 @@ export const CommentSection = ({ postId }: Props) => {
   const commentTree = comments ? buildCommentTree(comments) : [];
   return (
     <div className="mt-6">
-      <h3 className="text-2xl font-semibold mb-4">Comments</h3>
+      <h3 className=" pl-[70px] text-2xl font-semibold mb-4">Comments</h3>
       {user ? (
         <form onSubmit={handleSubmit} className="mb-4">
           <textarea
             value={newCommentText}
             rows={3}
             placeholder="Write a comment..."
-            className="w-full border border-white/10 bg-transparent p-2 rounded"
+            className=" pl-[70px] w-full border border-white/10 bg-transparent p-2 rounded"
             onChange={(e) => setNewCommentText(e.target.value)}
           />
           <button

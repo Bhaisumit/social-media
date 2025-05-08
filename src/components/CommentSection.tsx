@@ -134,19 +134,19 @@ export const CommentSection = ({ postId }: Props) => {
           />
           <button
             type="submit"
-            className="mt-2 bg-purple-500 text-white px-4 py-2 rounded cursor-pointer"
+            className=" pl-[70px] mt-2 bg-purple-500 text-white  py-2 rounded cursor-pointer"
             disabled={!newCommentText}
           >
             {isPending ? "Posting..." : "Post Comment"}
           </button>
           {isError && (
-            <p className="text-red-500 mt-2">
+            <p className=" pl-[70px] text-red-500 mt-2">
               Error posting comment, please try again
             </p>
           )}
         </form>
       ) : (
-        <p className="mb-4 text-gray-600">
+        <p className=" pl-[70px] mb-4 text-gray-600">
           you must be logged in to post a comment
         </p>
       )}

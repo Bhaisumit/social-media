@@ -43,9 +43,11 @@ export const PostDetail = ({ postId }: Props) => {
       <img
           src={data?.image_url}
           alt={data?.title}
-          className="mt-4 rounded object-cover w-full h-64"
+{/*           className="mt-4 rounded object-cover w-full h-64" */}
+          className="w-full max-w-2xl h-90% object-cover rounded mx-auto"
         />
-         <p className="text-gray-400">{data?.content}</p>
+                     <p className="text-gray-300 text-2xl font-normal leading-relaxed padding-left:70px">{data?.content}</p>
+{/*          <p className="text-gray-400">{data?.content}</p> */}
          <p className="text-gray-500 text-sm">
         Posted on: {new Date(data!.created_at).toLocaleDateString()}
       </p>

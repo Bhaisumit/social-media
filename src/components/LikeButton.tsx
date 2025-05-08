@@ -108,7 +108,7 @@ queryClient.invalidateQueries({queryKey:["votes",postId]});
 const userVote=votes?.find((v)=>v.user_id===user?.id)?.vote;
 
     return(
-        <div className="flex items-center space-x-4 my-4">
+        <div className=" pl-[70px] flex items-center space-x-4 my-4">
         <button
           onClick={() => mutate(1)}
           className={`px-3 py-1 cursor-pointer rounded transition-colors duration-150 ${

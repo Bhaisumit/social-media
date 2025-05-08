@@ -47,7 +47,7 @@ export const PostDetail = ({ postId }: Props) => {
         />
                      <p className="text-gray-300 text-2xl font-normal leading-relaxed pl-[70px]">{data?.content}</p>
 {/*          <p className="text-gray-400">{data?.content}</p> */}
-         <p className="text-gray-500 text-sm">
+         <p className="text-gray-500 text-sm pl-[70px]">
         Posted on: {new Date(data!.created_at).toLocaleDateString()}
       </p>
 
